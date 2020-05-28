@@ -1,0 +1,34 @@
+#myVideo {
+  position: sticky;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.video-card {
+  border: none;
+  background-color: inherit;
+  padding: 10px;
+}
+
+// .vid {
+//   border: solid 2px;
+//   border-color: var(--main-font-1-color);
+// }
+
+.video-card {
+  position: relative;
+}
+.video-card video {
+  position: relative;
+  z-index: 0;
+}
+.overlay {
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  color: lemonchiffon;
+}

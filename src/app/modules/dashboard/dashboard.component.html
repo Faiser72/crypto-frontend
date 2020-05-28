@@ -1,0 +1,58 @@
+<div class="container-fluid">
+
+    <!-- <div class="float-right">
+        <button mat-icon-button routerLinkActive="list-item-active" (click)="routeToLogin()" class="button">
+            <mat-icon>security</mat-icon>Insurance
+        </button>
+
+    </div> -->
+
+    <div class="float-right">
+        <button mat-icon-button routerLinkActive="list-item-active" routerLink='/insurance' class="button">
+            <mat-icon>security</mat-icon>Insurance
+        </button>
+
+    </div>
+
+    <div class="container mt-5 mb-5" [@bounce]="bounce" id="home">
+        <h1 class=" text-center txt">Best Indian Bitcoin Exchanges To Buy Bitcoins And To Pay Insurance
+            [Mega
+            List –
+            2020]</h1>
+    </div>
+
+
+
+
+    <app-about id="about"></app-about>
+
+    <app-whitepaper id='whitepaper' class="mb-5"></app-whitepaper>
+
+    <div class="row mt-5">
+        <div class="col-lg-6 col-sm-12 mt-5">
+            <div class="card app-text">
+                <h1 class="mt-3">Our besic thesis for bitcoin <br> is that it is better than gold.</h1>
+                <p class="text-justify">some random text goes here some random text goes here some random text goes
+                    here some random text
+                    goes
+                    here some random text goes heresome random text goes here some random text goes here some
+                    random text
+                    goes here </p>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-sm-12">
+            <div class="card app-picture">
+                <img src="assets/img/blockchainlink.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <app-main id="mains"></app-main>
+
+
+
+
+</div>
+<router-outlet></router-outlet>

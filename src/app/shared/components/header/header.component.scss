@@ -1,0 +1,39 @@
+ul li {
+  list-style: none;
+}
+
+.theme-list {
+  outline: 0;
+  width: 150px;
+  text-align: center;
+}
+
+.person-icon {
+  padding: 0px !important;
+}
+
+mat-icon {
+  padding-right: 2px;
+}
+
+button {
+  outline: none;
+}
+
+.gaps li {
+  padding-right: 50px;
+}
+
+.gaps {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+.dialog-icon {
+  color: var(--main-bg-2-color);
+  border: none;
+  background: none;
+}

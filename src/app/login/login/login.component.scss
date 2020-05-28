@@ -1,0 +1,159 @@
+.back {
+  background-color: var(--main-font-3-color);
+  background-image: -webkit-linear-gradient(
+    -30deg,
+    var(--main-font-3-color) 50%,
+    var(--main-font-1-color) 50%
+  );
+  height: 100%;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.company-text {
+  position: relative;
+  color: var(--main-font-1-color);
+  padding: 20px;
+}
+
+// @media screen and (max-width: 600px) {
+//   .container-fluid .company-text {
+//     // color: lightyellow;
+//     color: black;
+//     transition: width 2s;
+//   }
+// }
+@media screen and (max-width: 600px) {
+  .container-fluid {
+    overflow: scroll;
+  }
+}
+
+.a {
+  height: 350px;
+  padding: 10px;
+}
+
+.image {
+  position: absolute;
+  top: 20%;
+  // left: 50%;
+  width: 120px;
+  height: 120px;
+  margin: -60px 0 0 -60px;
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
+  background-color: var(--main-font-3-color);
+  border-radius: 100px;
+}
+
+.icon mat-icon {
+  padding: 10px;
+  color: lightgoldenrodyellow;
+  font-size: 30px;
+}
+
+.icon-1 {
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  border-radius: 100px;
+}
+
+.icon-1 mat-icon {
+  padding: 10px;
+  color: lightgoldenrodyellow;
+  font-size: 30px;
+}
+
+.b {
+  display: none;
+}
+
+.text-signin {
+  color: var(--main-font-3-color);
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -50px;
+  border-bottom: 3px solid;
+  border-radius: 5px;
+  border-color: var(--main-font-5-color);
+}
+
+mat-icon {
+  color: var(--main-bg-2-color);
+  border: none;
+  background: none;
+}
+
+.hide-btn {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.login-full-width {
+  width: 100%;
+}
+
+.form-signin {
+  width: 100%;
+}
+
+.form-signin .btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  padding: 1rem;
+  transition: all 0.2s;
+}
+
+.bt {
+  background-color: var(--main-font-3-color);
+  color: lightgoldenrodyellow;
+}
+
+.fgpwd {
+  cursor: pointer;
+  color: var(--main-bg-2-color);
+  margin-top: 10px;
+}
+
+/* For Dialog box starts*/
+.dialog-title {
+  color: var(--main-bg-2-color);
+}
+
+.dialog-text {
+  color: var(--main-bg-1-color);
+}
+/* For Dialog box ends*/

@@ -1,0 +1,102 @@
+<mat-toolbar color="{{themes()}}">
+    <mat-toolbar-row>
+        <button mat-icon-button (click)="toggleSideBar()" *ngIf="router.url != '/' && router.url != '/#mains' ">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <span>Crypto</span>
+        <div fxFlex fxLayout="row" fxLayoutAlign="flex-end" class="align-middle">
+            <ul fxLayout="row" fxLayoutGap="40px" class="mt-3 ">
+                <!-- Only for website(startup page) starts -->
+                <span class="gaps" *ngIf="router.url === '/'">
+
+                    <li> <button mat-icon-button (click)='toHome()' routerLinkActive="list-item-active">
+                            <mat-icon *ngIf="router.url === '/'">home</mat-icon>Home
+                        </button>
+                    </li>
+
+                    <li> <button mat-icon-button (click)='toAbout()' routerLinkActive="list-item-active">
+                            <mat-icon *ngIf="[(activeId)]=='about'">live_help</mat-icon>About
+                        </button>
+                    </li>
+
+                    <li> <button mat-icon-button (click)='toWhitePaper()' routerLinkActive="list-item-active">
+                            <mat-icon *ngIf="[(activeId)]=='whitePaper'">library_books</mat-icon>WhitePaper
+                        </button>
+                    </li>
+
+                    <li> <button mat-icon-button (click)='toMain()' routerLinkActive="list-item-active">
+                            <mat-icon *ngIf="[(activeId)]=='mains'">account_balance_wallet</mat-icon>main
+                        </button>
+                    </li>
+
+                    <li>
+                        <button routerLinkActive="list-item-active" mat-icon-button (click)='openDialog()'>
+                            <mat-icon *ngIf="[(activeId)]=='signUp'">person_add</mat-icon>SignUp
+                        </button>
+                    </li>
+
+                </span>
+                <!-- <li *ngIf="router.url === '/' || router.url ==='/#mains'">
+                    <button routerLinkActive="list-item-active" mat-icon-button href='#mains'>
+                        <mat-icon>account_balance_wallet</mat-icon>
+                        Main
+                    </button>
+                </li> -->
+
+
+                <!-- Only for website(startup page) ends -->
+
+                <li>
+                    <button mat-icon-button [matMenuTriggerFor]="menu">
+                        <mat-icon>settings</mat-icon>
+                    </button>
+                    <mat-menu #menu="matMenu">
+                        <!-- <button mat-menu-item (click)='routeToChangePassword()'>
+                            <mat-icon>vpn_key</mat-icon>
+                            Change Password
+                        </button> -->
+
+                        <button mat-menu-item [matMenuTriggerFor]="menu1">
+                            <mat-icon>format_color_fill</mat-icon>
+
+                            <mat-menu #menu1="matMenu" class="theme-menu">
+                                <button mat-menu-item (click)='themes1()' class="theme-list">
+                                    <mat-icon style="color: rgb(252, 54, 87);">color_lens</mat-icon>
+                                    Pink
+                                </button>
+                                <button mat-menu-item (click)='themes2()' class="theme-list">
+                                    <mat-icon>color_lens</mat-icon>
+                                    Light
+                                </button>
+                                <button mat-menu-item (click)='themes3()' class="theme-list">
+                                    <mat-icon style="color: orangered;">color_lens</mat-icon>
+                                    Warm
+                                </button>
+                                <button mat-menu-item (click)='themes0()' class="theme-list">
+                                    <mat-icon style="color: blue;">color_lens</mat-icon>
+                                    Blue
+                                </button>
+                            </mat-menu>
+                            Theme
+                        </button>
+
+
+                        <!-- <button mat-menu-item>
+                            <mat-icon>live_help</mat-icon>
+                        </button> -->
+
+                        <button mat-menu-item>
+                            <mat-slide-toggle (change)="onDarkModeSwitched($event)">Dark Mode</mat-slide-toggle>
+                        </button>
+
+                        <button mat-menu-item (click)='doLogout()'>
+                            <mat-icon>exit_to_app</mat-icon>
+                            Sign Out
+                        </button>
+                    </mat-menu>
+                </li>
+            </ul>
+        </div>
+    </mat-toolbar-row>
+
+</mat-toolbar>

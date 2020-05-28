@@ -1,0 +1,10 @@
+<mat-icon matSuffix style="float: right; cursor: pointer;" (click)='close()'>clear</mat-icon>
+<h1 mat-dialog-title class="dialog-title">Otp</h1>
+<div mat-dialog-content>
+    <p class="dialog-text">Enter your otp.</p>
+    <ng-otp-input (onInputChange)="onOtpChange($event)" [config]="{length:6}"></ng-otp-input>
+</div>
+<div mat-dialog-actions>
+    <button class="btn btn-sm btn-primary btn-block text-uppercase" type="submit"
+        (click)="openChangepasswordDialog()">Submit</button>
+</div>

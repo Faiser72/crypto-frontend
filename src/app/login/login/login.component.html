@@ -1,0 +1,52 @@
+<div class="container-fluid back">
+    <video autoplay muted loop id="myVideo">
+        <source src="assets/videos/block.mp4" type="video/mp4">
+    </video>
+    <h1 class="company-text">Crypto.com</h1>
+
+    <div class="container">
+
+        <!-- <div class="mx-auto mt-3">
+            <img class="image float-left" src="assets/img/bit1.png" alt="" width="120" height="120">
+        </div> -->
+        <div class="row mx-auto d-flex justify-content-around mt-5 mb-5">
+            <div class="col-lg-6 col-sm-10 mt-5 ">
+                <div class="card a  shadow ">
+                    <div class="icon">
+                        <mat-icon class="">account_balance_wallet</mat-icon>
+                    </div>
+                    <p class="text-signin mx-auto">Sign In</p>
+                    <form [formGroup]="signInForm" class="form-group w-75 mx-auto">
+                        <mat-form-field class="login-full-width">
+                            <mat-label>Email</mat-label>
+                            <input matInput type="email" required placeholder="Enter Your MailId "
+                                formControlName="emailid">
+                            <mat-icon matSuffix>email</mat-icon>
+                        </mat-form-field>
+
+                        <mat-form-field class="login-full-width">
+                            <mat-label>Enter your password</mat-label>
+                            <input matInput [type]="hide ? 'password' : 'text'" formControlName="password">
+                            <button class="hide-btn" mat-icon-button matSuffix (click)="hide = !hide"
+                                [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                            </button>
+                        </mat-form-field>
+
+                        <button class="btn btn-lg  btn-block text-uppercase bt" (click)='openChangepasswordDialog()'
+                            type="submit">Sign in</button>
+                        <h6 mat-raised-button (click)="openDialog()" class="text-center fgpwd">Forgot Your Password?
+                        </h6>
+                    </form>
+                </div>
+            </div>
+            <!-- <div class="col-lg-5 col-sm-10 mt-5">
+                <div class="card a  shadow {{b}}">
+                    <div class="icon-1">
+                        <mat-icon class="">account_balance_wallet</mat-icon>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</div>

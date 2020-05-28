@@ -1,0 +1,57 @@
+.background-text {
+  color: rgba(119, 136, 153, 0.589);
+  font-size: 80px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.wp-card {
+  height: 30rem;
+  background: linear-gradient(235deg, #000046, #1cb5e0);
+  border: none;
+  padding: 20px;
+}
+
+.wp-card h2 {
+  color: var(--main-font-1-color);
+}
+
+.wp-card2 {
+  height: 30rem;
+  background-color: inherit;
+  border: none;
+}
+
+.download {
+  border-radius: 100px;
+  height: 100px;
+  width: 100px;
+  background: linear-gradient(235deg, #000046, #1cb5e0);
+  padding: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.download:hover {
+  height: 105px;
+  width: 105px;
+}
+
+.english {
+  padding-left: 10px;
+}
+.download mat-icon {
+  padding: 15px;
+  color: lightgoldenrodyellow;
+  font-size: 60px;
+  transition: all 0.5s;
+}
+
+.download mat-icon:hover {
+  padding: 18px;
+  color: lightgoldenrodyellow;
+  font-size: 70px;
+}

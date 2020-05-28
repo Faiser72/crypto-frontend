@@ -1,0 +1,67 @@
+/* For Dialog box starts*/
+.container-fluid {
+  padding: 0px;
+}
+.dialog-title {
+  color: var(--main-bg-2-color);
+}
+
+.dialog-text {
+  color: var(--main-bg-1-color);
+}
+
+mat-icon {
+  color: var(--main-bg-2-color);
+  border: none;
+  background: none;
+}
+
+.bt {
+  background-color: var(--main-font-3-color);
+  color: lightgoldenrodyellow;
+}
+
+.text-signin {
+  color: var(--main-font-3-color);
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -50px;
+  border-bottom: 3px solid;
+  border-radius: 5px;
+  border-color: var(--main-font-5-color);
+}
+
+.login-full-width {
+  width: 100%;
+}
+
+.form-signin {
+  width: 100%;
+}
+
+.form-signin .btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  padding: 1rem;
+  transition: all 0.2s;
+}
+
+mat-checkbox {
+  display: block;
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
+  background-color: var(--main-font-3-color);
+  border-radius: 100px;
+}
+
+.icon mat-icon {
+  padding: 10px;
+  color: lightgoldenrodyellow;
+  font-size: 30px;
+}
+/* For Dialog box ends*/
